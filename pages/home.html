@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battery World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background-image: url('../images/bg.jpg');
+      
+      background-size: auto;
+      position: relative;
+    }
+
+    /* Dark green overlay to make text readable */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 100, 0, 0.6);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: linear-gradient(to right, #00cc44, #00ff99);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .nav-links a:hover {
+      background: linear-gradient(to right, #00ff66, #66ffb3);
+      transform: scale(1.05);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 85vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .battery-row {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .battery-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      width: 120px;
+    }
+
+    .battery-card:hover {
+      transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .battery-card img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .battery-card span {
+      font-weight: bold;
+      color: #ffea00;
+      display: block;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #00ff00, #66ff33);
+      color: black;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #99ff66, #ccff66);
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Battery World</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="product.html">Products</a>
+      <a href="testimonial.html">Testimonials</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Battery World</h1>
+    <p>Your ultimate destination for energy, power, and reliability.</p>
+    
+    <!-- Battery Display -->
+    <div class="battery-row">
+      <div class="battery-card">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/low-battery.png" alt="Battery 1">
+        <span>Low Power</span>
+      </div>
+      <div class="battery-card">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/medium-battery.png" alt="Battery 2">
+        <span>Mid Power</span>
+      </div>
+      <div class="battery-card">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/high-battery.png" alt="Battery 3">
+        <span>High Power</span>
+      </div>
+      <div class="battery-card">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/full-battery.png" alt="Battery 4">
+        <span>Full Charge</span>
+      </div>
+    </div>
+
+    <button>Shop Batteries</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Battery World. All rights reserved.
+  </footer>
+
+</body>
+</html>
