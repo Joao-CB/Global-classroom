@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cart Page -->
+    <section class="container">
+        <h2>Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sample Product</td>
+                    <td>$25.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$25.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+    </section>
+</body>
+
+</html>
+
+<<!-- CSS File (style.css) -->
+    <style>
+        :root {
+            --dark-green: #092601;
+            --lincoln-green: #195905;
+            --avocado: #4A7A3D;
+            --limerick: #6BAD3C;
+            --cultured: #F5F5F5;
+        }
+
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: var(--cultured);
+            margin: 0;
+            padding: 0;
+            color: var(--dark-green);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--lincoln-green);
+        }
+
+        .cart-table,
+        .cart-table th,
+        .cart-table td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .cart-table input {
+            width: 60px;
+        }
+
+        .checkout-form label,
+        .payment-form label {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: var(--limerick);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: var(--avocado);
+        }
+    </style>
