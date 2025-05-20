@@ -1,0 +1,108 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1c611b, #67a31b);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .login-container {
+      width: 300px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #123214;
+      color: white;
+      font-size: 1rem;
+    }
+
+    input::placeholder {
+      color: #888;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .forgot a {
+      color: #a9f76b;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 14px;
+      background-color: #a9f76b;
+      border: none;
+      border-radius: 10px;
+      color: #123214;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .register {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    .register a {
+      color: #c3ff6b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="login-button">Log In</button>
+
+      <div class="register">
+        Don’t have an account? <a href="#">Register</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
