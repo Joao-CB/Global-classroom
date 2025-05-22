@@ -3,107 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Battery Link</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #2ecc71, #27ae60);
-      color: white;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      width: 90%;
-      max-width: 450px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #2ecc71;
-    }
-
-    p {
-      color: #333;
-      font-size: 15px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-    }
-
-    input, textarea {
-      margin: 10px 0;
-      padding: 12px;
-      border: 2px solid #2ecc71;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-
-    button {
-      background-color: #2ecc71;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #1abc9c;
-    }
-
-    .contact-icons {
-      margin-top: 25px;
-    }
-
-    .contact-icons a {
-      display: inline-block;
-      font-size: 32px;
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2ecc71;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
-
-    .contact-icons a:hover {
-      transform: scale(1.2);
-      color: #1abc9c;
-    }
-  </style>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/claudia.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Contact Battery Link</h1>
-    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-    
-    <form action="submit_form.php" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="contact-icons">
-      <!-- WhatsApp icon (hidden number in link) -->
-      <a href="https://wa.me/264818559866?text=Hi%20Battery%20Link%2C%20I%20have%20a%20question." target="_blank" title="Chat on WhatsApp">📱</a>
-
-      <!-- Email icon (hidden address in link) -->
-      <a href="mailto:claudiaxdavid95@gmail.com?subject=Battery%20Link%20Inquiry&body=Hi%20Battery%20Link%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." title="Send an Email">✉️</a>
+<!-- Navigation -->
+  <nav>
+    <div class="logo">BatteryLink</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="product.html">Products</a>
+      <a href="testimonial.html">Testimonials</a>
+      <a href="login.html">Login</a>
     </div>
-  </div>
+  </nav>
+
+  <section class="contact-section">
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elt. Integer nec oódio.</p>
+      <div class="contact-info">
+        <p><span>📧</span> info@battrylink.com</p>
+        <p><span>📞</span> 123-456-7890</p>
+        <p><span>📍</span> 1234 Elm St. Springfield, IL 62701</p>
+      </div>
+    </div>
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.889354161063!2d-89.65014868464747!3d39.78172127944496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887520a86cf57c6d%3A0xe6815a93ae6e2c32!2sSpringfield%2C%20IL!5e0!3m2!1sen!2sus!4v1625240490625!5m2!1sen!2sus"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
+
