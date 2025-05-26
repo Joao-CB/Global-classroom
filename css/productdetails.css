@@ -1,25 +1,67 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background-color: #004d00;
-    color: #333;
-    line-height: 1.6;
-}
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(10, 10, 10);
+    background-image: url('../images/bg.jpg');
+    
+    background-size: 50%;
+    position: relative;
+  }
 
-header {
-    background-color: #ffffffd3;
-    padding: 1rem 2rem;
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 100, 0, 0.6);
+    z-index: -1;
+  }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: linear-gradient(to right, #00cc44, #00ff99);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .nav-links a:hover {
+      background: linear-gradient(to right, #00ff66, #66ffb3);
+      transform: scale(1.05);
+    }
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
 
 nav ul {
     display: flex;
@@ -54,8 +96,41 @@ main {
 
 h1 {
     margin-bottom: 2rem;
-    color: #222;
+    color: #fffefe;
 }
+.battery-row {
+    display: flex;
+    gap: 240px;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+.battery-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 120px;
+  }
+
+  .battery-card:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .battery-card img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .battery-card span {
+    font-weight: bold;
+    color: #ffea00;
+    display: block;
+  }
 
 .product-grid {
     display: grid;
@@ -112,3 +187,13 @@ h1 {
     background-color: #0069d9;
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.4);
+  }
