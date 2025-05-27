@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">BatteryLink</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+            <a href="testimonial.html">Testimonials</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+    
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Checkout</h1>
+    </section>
+
+    <!-- CHECKOUT CONTENT -->
+    <div class="container">
+        <div class="checkout-content">
+    
+            <!-- BILLING DETAILS -->
+            <div class="billing-details">
+                <h2>Billing Details</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom:20px;">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group" style="margin-bottom:20px;">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="(123) 456-7890">
+                </div>
+                <div class="form-group" style="margin-bottom:20px;">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="123 Main St">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Windhoek">
+                    </div>
+                    <div class="form-group">
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" placeholder="9000">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ORDER SUMMARY -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Product Name</span>
+                    <span>N$25.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span>N$25.00</span>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- PROCEED BUTTON -->
+         <a href=".//payment.html">
+            <button class="btn">Proceed to Payment</button>
+         </a>
+    </div>
+    
+    </body>
+    
+    </html>

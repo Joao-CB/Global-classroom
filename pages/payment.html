@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../css/payment.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pbHw6XVPkKf+6UQXaVbjec3YMoNeiQfCq5G+X0QcQ+FNT9aqL9iRtLrEvEu9g5GQdjwOnuf0vAC+h2KZlYl5wA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">BatteryLink</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+            <a href="testimonial.html">Testimonials</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Checkout</h1>
+        <div class="subtitle">Proceed to payment</div>
+    </section>
+
+    <!-- PAYMENT FORM CARD -->
+    <div class="payment-card">
+        <h2>Payment Details</h2>
+        <form>
+            <div class="form-group">
+                <label for="cc-number">Card Number</label>
+                <input type="text" id="cc-number" placeholder="1234 5678 9012 3456">
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="cc-expiry">Expiration Date</label>
+                    <input type="text" id="cc-expiry" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label for="cc-cvc">CVC</label>
+                    <input type="text" id="cc-cvc" placeholder="123">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cc-name">Name on Card</label>
+                <input type="text" id="cc-name" placeholder="John Doe">
+            </div>
+
+            <button type="submit" class="btn-place">Place Order</button>
+        </form>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+
+</body>
+
+</html>

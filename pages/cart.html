@@ -3,16 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+   
 </head>
 
 <body>
-    <!-- Cart Page -->
-    <section class="container">
-        <h2>Cart</h2>
-        <table class="cart-table">
+
+    <!-- NAVIGATION -->
+    <nav>
+    <div class="logo">BatteryLink</div>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="product.html">Products</a>
+          <a href="testimonial.html">Testimonials</a>
+          <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <section class="hero">
+        <h1>Cart</h1>
+    </section>
+
+    <!-- CART CONTENT -->
+    <div class="container">
+        <table>
             <thead>
                 <tr>
                     <th>Product</th>
@@ -23,84 +42,47 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Sample Product</td>
-                    <td>$25.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$25.00</td>
+                    <td>
+                        <div class="product-info">
+                            <img src="https://via.placeholder.com/80" alt="Product">
+                            <span class="name">Product Name</span>
+                        </div>
+                    </td>
+                    <td class="price">N$25.00</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td class="total">N$25.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="https://via.placeholder.com/80" alt="Product">
+                            <span class="name">Product Name</span>
+                        </div>
+                    </td>
+                    <td class="price">N$25.00</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td class="total">N$25.00</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="label">Subtotal</td>
+                    <td>N$50.00</td>
+                </tr>
+            </tfoot>
         </table>
-        <a href="checkout.html" class="btn">Proceed to Checkout</a>
-    </section>
+
+        <div class="btn-container">
+            <a href="../pages/checkout.html">
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </a>
+        </div>
+    </div>
+
 </body>
 
 </html>
-
-<<!-- CSS File (style.css) -->
-    <style>
-        :root {
-            --dark-green: #092601;
-            --lincoln-green: #195905;
-            --avocado: #4A7A3D;
-            --limerick: #6BAD3C;
-            --cultured: #F5F5F5;
-        }
-
-        body {
-            font-family: Tahoma, sans-serif;
-            background-color: var(--cultured);
-            margin: 0;
-            padding: 0;
-            color: var(--dark-green);
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1.5rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: var(--lincoln-green);
-        }
-
-        .cart-table,
-        .cart-table th,
-        .cart-table td {
-            border: 1px solid #ccc;
-            border-collapse: collapse;
-            padding: 10px;
-            width: 100%;
-            text-align: left;
-        }
-
-        .cart-table input {
-            width: 60px;
-        }
-
-        .checkout-form label,
-        .payment-form label {
-            display: block;
-            margin-bottom: 1rem;
-        }
-
-        .btn {
-            background-color: var(--limerick);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 1rem;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background-color: var(--avocado);
-        }
-    </style>

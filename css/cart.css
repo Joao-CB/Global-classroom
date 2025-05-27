@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 100, 0, 0.6);
+    z-index: -1;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #00cc44, #00ff99);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(to right, #00ff66, #66ffb3);
+    transform: scale(1.05);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+
+
+/* CART TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+thead th {
+    text-align: left;
+    padding: 12px 8px;
+    border-bottom: 2px solid #cfe2d4;
+    font-weight: 600;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e2e9e4;
+}
+
+td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+/* product column: image + name */
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.product-info .name {
+    font-size: 1.1rem;
+    color: #27411e;
+}
+
+/* price/total styling */
+.price,
+.total {
+    font-size: 1.1rem;
+}
+
+/* quantity input */
+input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #a3c99f;
+    border-radius: 4px;
+}
+
+/* subtotal row */
+tfoot td {
+    padding: 12px 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+tfoot .label {
+    text-align: right;
+    color: #27411e;
+}
+
+/* checkout button */
+.checkout-btn {
+    display: inline-block;
+    background: #38761d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin: 0 auto;
+}
+
+.checkout-btn:hover {
+    background: #2e7d32;
+}
+
+.btn-container {
+    text-align: center;
+}
