@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 100, 0, 0.6);
+    z-index: -1;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #00cc44, #00ff99);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(to right, #00ff66, #66ffb3);
+    transform: scale(1.05);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ─── Main Container ─── */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;    
+}
+
+/* ─── Two-Column Layout ─── */
+.checkout-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* ─── Panel Borders & Rounding ─── */
+.billing-details,
+.order-summary {
+    border: 1px solid #38761d;
+    border-radius: 8px;
+    padding: 30px;
+    background: transparent;;
+    margin-bottom: 20px;
+}
+
+/* ─── Billing Form ─── */
+.billing-details h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.billing-details .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.billing-details .form-group {
+    flex: 1;
+}
+
+.billing-details label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.billing-details input {
+    width: 95%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #38761d;
+    border-radius: 4px;
+}
+
+/* ─── Order Summary ─── */
+.order-summary h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e9e4;
+    font-size: 1.1rem;
+}
+
+.summary-item.total {
+    border-bottom: none;
+    font-weight: 600;
+}
+
+/* ─── Proceed Button ─── */
+
+.btn {
+    display: block;
+    background: #38761d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin: 0 auto;
+}
+
+.a {
+    text-decoration: none !important;
+}
+
+btn:hover{
+    text-decoration: none;
+    background: #2e7d32;
+    /* also ensure other states stay un-underlined */
+}
