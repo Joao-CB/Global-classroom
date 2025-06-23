@@ -4,137 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us</title>
-<style>* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
-  }
-  
-  header {
-    background: linear-gradient(to right, #064f1f, #0b7117);
-    padding: 15px 30px;
-  }
-  
-  .nav-links {
-    display: inline-flex;
-    list-style: none;
-    gap: 25px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .register-button {
-    background-color: #5bbf5b;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    float: right;
-  }
-  
-  main {
-    padding: 40px;
-  }
-  
-  .about-section h1 {
-    color: #0b530c;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .about-section p {
-    margin-bottom: 20px;
-    max-width: 800px;
-  }
-
-  .team-section {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .team-member {
-      text-align: center;
-    }
-    .team-member img {
-      width: 100%;
-      height: 50%;
-      max-width: 200px;
-      border-radius: 8px;
-    }
-  
-  .team-member h3 {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
-  footer {
-    background: linear-gradient(to right, #064f1f, #0b7117);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .social-icons span {
-    color: white;
-    margin: 0 10px;
-    font-size: 20px;
-  }</style>
-  
+  <link rel="stylesheet" href="../css/fesi.css">
 </head>
 <body>
+
   <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Testimonials</a></li>
-      </ul>
-      <a href="#" class="register-button">Register</a>
-    </nav>
+      <!-- Navigation -->
+  <nav>
+    <div class="logo">BatteryLink</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="product.html">Products</a>
+      <a href="testimonial.html">Testimonials</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
   </header>
 
   <main>
     <section class="about-section">
       <h1>About Us</h1>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla facilisi. Cras tincidunt, sapien nec varius fermentum, fells risus tincidunt turpis, sed consectetur felis turpis id ligula. Aenean vel interdum enim. Sed scelerisque porttitor libero id aliquam. Curabitur vehicula est at magna laoreet, eget pretium ligula malesuada.</p>
-      <p>Nullam venenatis lacus a quam condimentum, ac euismod sem iaculis. Fusce egestas neque nec justo viverra, in elementum metus facilisis. In hac habitasse platea dictumst. Donec vehicula mi et nulla sollicitudin, eu ultrices erat suscipit.</p>
+      <p><strong>Battery Link</strong> specializes in delivering reliable, high-performance battery solutions to power homes, businesses, and industries across Namibia and beyond. Since our founding in <strong>2024</strong>, we’ve built a reputation for quality, efficiency, and excellent customer service.</p>
+
+      <p>Whether you need batteries for solar energy systems, backup power, automotive use, or industrial equipment, we stock a wide range of trusted brands to meet your needs.</p>
+
+      <h2>🔋 Our Mission</h2>
+      <p>To power progress by providing durable, affordable, and efficient energy storage solutions for every application.</p>
+
+      <h2>🌍 Our Vision</h2>
+      <p>To become the leading battery supplier in Southern Africa, driving energy independence through dependable storage solutions.</p>
     </section>
 
-   <section class="team-section">
-    <div class="team-member"><img src="../images/festus.jpeg" alt="Member 1"><h3>Member 1</h3></div>
-    <div class="team-member"><img src="../images/glen.jpeg" alt="Member 2"><h3>Member 2</h3></div>
-    <div class="team-member"><img src="../images/heino.jpeg" alt="Member 3"><h3>Member 3</h3></div>
-    <div class="team-member"><img src="../images/nercy.jpeg" alt="Member 4"><h3>Member 4</h3></div>
-    <div class="team-member"><img src="../images/timo.jpeg" alt="Member 5"><h3>Member 5</h3></div>
-    <div class="team-member"><img src="../images/Leon.jpeg" alt="Member 6"><h3>Member 6</h3></div>
-    <div class="team-member"><img src="../images/claudia.jpg" alt="Member 7"><h3>Member 7</h3></div>
-    <div class="team-member"><img src="images/8.jpg" alt="Member 8"><h3>Member 8</h3></div>
-    <div class="team-member"><img src="images/9.jpg" alt="Member 9"><h3>Member 9</h3></div>
-  </section>
-
+    <section class="team-section">
+      <div class="team-member">
+        <img src="../images/festus.jpeg" alt="Festus">
+        <h3>Festus Valombola</h3>
+      </div>
+      <div class="team-member">
+        <img src="../images/glen.jpeg" alt="Glen">
+        <h3>Glen Anton</h3>
+      </div>
+      <div class="team-member">
+        <img src="../images/heino.jpeg" alt="Heino">
+        <h3>Heino Plaatjies</h3>
+      </div>
+      <div class="team-member">
+        <img src="../images/nercy.jpeg" alt="Nercy">
+        <h3>Nercy Matongela</h3>
+      </div>
+      <div class="team-member">
+        <img src="../images/timo.jpeg" alt="Timo">
+        <h3>Timo Iipinge</h3>
+      </div>
+      <div class="team-member">
+        <img src="../images/Leon.jpeg" alt="Leon">
+        <h3>Leon Engelbrecht</h3>
+      </div>
+      <div class="team-member">
+        <img src="../images/Claudia.jpeg" alt="Claudia">
+        <h3>Claudia David</h3>
+      </div>
+    </section>
   </main>
 
+ <!-- Footer -->
   <footer>
-    <div class="social-icons">
-      <span>🌐</span> <span>🐦</span> <span>📸</span> <span>▶️</span>
-    </div>
+    &copy; 2025 BatteryLink. All rights reserved.
   </footer>
 </body>
 </html>
